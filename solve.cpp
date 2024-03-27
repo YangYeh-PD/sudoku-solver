@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include "Sudoku.h"
+#include "sudoku.h"
 using namespace std;
 
 bool solve(Sudoku, Sudoku &);
@@ -8,7 +8,7 @@ bool solve(Sudoku, Sudoku &);
 int main(int argc, char *argv[]) {
     int num;
     Sudoku ques, ans;
-    ifstream inFile("Problem", ios::in);
+    ifstream inFile("problem", ios::in);
 
     for (int i = 0; i < Sudoku::Sudokusize; i++) {
         inFile >> num;

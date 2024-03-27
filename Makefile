@@ -1,17 +1,17 @@
-all: Solver Generator
+all: solve generate
 
-Solver: Solver.o Sudoku.o
-	g++ -o Solver Solver.o Sudoku.o
-Solver.o: Solver.cpp Sudoku.h
-	g++ -c Solver.cpp
+solve: solve.o sudoku.o
+	g++ -o solve solve.o sudoku.o
+solve.o: solve.cpp sudoku.h
+	g++ -c solve.cpp
 
-Generator: Generator.o Sudoku.o
-	g++ -o Generator Generator.o Sudoku.o
-Generator.o: Generator.cpp Sudoku.h
-	g++ -c Generator.cpp
+generate: generate.o sudoku.o
+	g++ -o generate generate.o sudoku.o
+generate.o: generate.cpp sudoku.h
+	g++ -c generate.cpp
 
-Sudoku.o: Sudoku.cpp Sudoku.h
-	g++ -c Sudoku.cpp
+sudoku.o: sudoku.cpp sudoku.h
+	g++ -c sudoku.cpp
 	
 clean:
-	rm Solver Generator *.o
+	rm solve generate *.o

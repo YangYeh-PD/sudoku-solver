@@ -2,14 +2,14 @@
 #include <fstream>
 #include <ctime>
 #include <unistd.h>
-#include "Sudoku.h"
+#include "sudoku.h"
 using namespace std;
 
 int main(int argc, char *argv[]) {
     int iRand, num;
     Sudoku board;
-    ifstream inFile("Question_Database", ios::in);
-    ofstream outFile("Problem", ios::out);
+    ifstream inFile("question", ios::in);
+    ofstream outFile("problem", ios::out);
 
     inFile >> num;
     srand(time(NULL));

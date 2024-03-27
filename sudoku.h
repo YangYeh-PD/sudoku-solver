@@ -1,4 +1,3 @@
-// Medium 1~2 ; Hard 3~4
 class Sudoku {
     public:
         Sudoku();

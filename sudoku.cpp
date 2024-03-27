@@ -1,4 +1,4 @@
-#include "Sudoku.h"
+#include "sudoku.h"
 using namespace std;
 
 Sudoku::Sudoku() {
